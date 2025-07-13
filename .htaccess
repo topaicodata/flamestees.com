@@ -10,6 +10,7 @@
 	ExpiresByType image/gif A691200
 	ExpiresByType image/png A691200
 	ExpiresByType image/jpeg A691200
+	ExpiresByType image/jpg A691200
 	ExpiresByType text/css A691200
 	ExpiresByType text/javascript A691200
 	ExpiresByType application/javascript A691200
@@ -27,29 +28,46 @@
 		Order allow,deny
 	</IfModule>
 </FilesMatch>
+
 ErrorDocument 401 "Unauthorized"
 ErrorDocument 403 "Forbidden"
+
 <IfModule mod_negotiation.c>
 	#Options -MultiViews
 </IfModule>
+
+# REWRITES FOR FRONTEND + NODE API
 RewriteEngine On
 RewriteBase /
+
+# Bypass rewriting for assets and node.js API
 RewriteCond %{REQUEST_URI} !^/js/
 RewriteCond %{REQUEST_URI} !^/css/
+RewriteCond %{REQUEST_URI} !^/images/
+RewriteCond %{REQUEST_URI} !^/api/
 
+# Allow well-known paths and other headers
 RewriteCond %{HTTP:Authorization} ^(.*)
 RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 RewriteCond %{HTTP:X-Server-Addr} ^(.*)
 RewriteRule .* - [e=HTTP_X_SERVER_ADDR:%1]
 RewriteRule ^\.well-known/.+ - [L]
 
-
+# Set default file
 DirectoryIndex index.php index.cgi index.html
-# RewriteCond %{REQUEST_FILENAME} !-f [OR]
-# RewriteCond %{REQUEST_URI} ^\/(js\/(main\.js|bootstrap\.min\.js)|css\/([0-9a-f]+\.css|common\.css|site\.css|bootstrap\.min\.css)|sitemap\.xml)$
-RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^(.*)$ ncsitebuilder/$1 [L,QSA]
 
+# Rewrite everything else to index.html
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+# RewriteCond %{REQUEST_URI} ^\/(js\/(main\.js|bootstrap\.min\.js)|css\/([0-9a-f]+\.css|common\.css|site\.css|bootstrap\.min\.css)|sitemap\.xml)$
+RewriteCond %{REQUEST_URI} ^/js/(|css\/([0-9a-f]+\.css|common\.css|site\.css|bootstrap\.min\.css)|sitemap\.xml)$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ ncsitebuilder/$1 [L,QSA]
+
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_URI} !^/api/
+# RewriteRule ^ app.js [L]
 
 #### PERSISTENT CONTENT ####
 

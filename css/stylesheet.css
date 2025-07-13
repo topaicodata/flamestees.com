@@ -1,4 +1,3 @@
-/* Available globally */
 :root {
     --main-color: #581845 ;
     --black: #13131a;
@@ -6,7 +5,6 @@
     --bg: #d3ad7f;
     --border: .1rem solid rgba(255, 255, 255, .3);
 }
-
 /* Base styling */
 * {
     font-family: 'Roboto', sans-serif;
@@ -16,10 +14,8 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
-
 /* Root */
 html {
     font-size: 62.5%;
@@ -28,7 +24,6 @@ html {
     scroll-behavior: smooth;
     background: transparent;
 }
-
 /* Pseudo-element for scrollbar */
 html::-webkit-scrollbar {
     width: .8rem;
@@ -43,23 +38,75 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
     background: #fff;
 }
-
-/* Head section start */
-header .logo img {
-    height: 6rem;
-}
-header {
-    padding: 4rem;
+.btn, .contactBtn, .cBtn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
     background: var(--bg);
+    cursor: pointer;
+}
+.btn:hover, .contactBtn:hover, .cBtn:hover {
+    letter-spacing: .2rem;
+}
+
+/* BODY SECTION  */
+body {
+    scroll-behavior: smooth;
+    /* min-height: 100vh; */
+    /* position: relative; */
+}
+.wrapper {
+    position: relative;
+    /* overflow: hidden; */
+}
+.main-bg {
+    background: url(../images/joggingflip.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.8; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+section {
+    padding: 2rem 7%;
+    transition: all 0.5s ease;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1rem;
+}
+
+/* HEADER SECTION START */
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem;
+    background: var(--bg);
     border-bottom: var(--border);
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 8rem;
+    left: 0;
+    z-index: 999;
+    /* width: 100%; */
+    /* min-height: 8rem; */
+}
+header .logo img {
+    height: 6rem;
 }
 header .navbar a {
     margin: 1rem;
@@ -72,13 +119,16 @@ header .navbar a:hover {
     padding-bottom: .5rem;
 }
 header .icons i {
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     font-size: 2rem;
     margin-left: 2rem;
 }
 header .icons i:hover {
     color: var(--main-color);
+}
+.icons #menu-btn {
+    display: none;
 }
 header .search-form {
     position: absolute;
@@ -112,9 +162,7 @@ header .search-form label {
 header .search-form label:hover {
     color: var(--bg);
 }
-#menu-btn {
-    display: none;
-}
+/* CART ITEMS START */
 header .cart-items-container {
     position: absolute;
     top: 100%; right: -100%;
@@ -122,19 +170,11 @@ header .cart-items-container {
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
-
 header .cart-items-container.active {
     right: 0px;
-}
-/* CART CONTAINER SECTION */
-#cart-container {
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
 }
 .cart-header {
     display: grid;
@@ -152,12 +192,8 @@ header .cart-items-container.active {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     text-align: center;
-    /* padding: 10px; */
+    padding: 10px;
     border-bottom: 1px solid #ddd;
-}
-.cart-item-container {
-    display: flex;
-    flex-direction: column;
 }
 .cart-img img {
     height: 6rem;
@@ -188,62 +224,15 @@ header .cart-items-container.active {
 .remove-item:hover {
     background: #0056b3;
 }
-.cart-qty span {
-    width: 30px;
-    text-align: center;
-}
-.cart-total, .subtotal, .sales-tax, .coupon, .final-total{
-    margin: 10px 10px 10px 0px;
-}
 .final-total {
     font-size: large;
 }
-/* Head section end */
+/* CART ITEMS END */
+/* HEADER SECTION ENDS */
 
-
-
-
-/* Body section start */
-body {
-    min-height: 100vh;
-    background: url(../images/joggingflip.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding-top: 80px;
-    position: relative;
-}
-body section {
-    padding: 2rem 7%;
-    transition: all 0.5s ease;
-}
-body .heading {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-}
-body .heading span {
-    color: var(--main-color);
-    text-transform: uppercase;
-}
-body .homeBtn, .btn, .cartBtn, .contactBtn, .cBtn {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .9rem 3rem;
-    font-size: 1.7rem;
-    color: #fff;
-    background: var(--bg);
-    cursor: pointer;
-}
-body .homeBtn:hover, .btn:hover, .cartBtn:hover, .contactBtn:hover, .cBtn:hover {
-    letter-spacing: .2rem;
-}
-/* Home Section */
+/* HOME SECTION START */
 body .home {
     min-height: 100vh;
-    display: none;
     transition: all 0.5s ease;
     position: relative;
     width: 100%;
@@ -262,6 +251,9 @@ body .home .content h3 {
     text-transform: uppercase;
     color: #fff;
 }
+body .home .content h5 {
+    font-size: 2.5rem;
+}
 body .home .content p {
     font-size: 1.5rem;
     font-weight: lighter;
@@ -269,7 +261,44 @@ body .home .content p {
     padding: 1rem 0;
     color: #eee;
 }
+/* HOME SECTION END */
+
+
+body .heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+}
+body .heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/* Banner Section Start */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    border: var(--border);
+    background-color: rgba(0, 0, 0, .3);
+    margin: 4rem 0;
+    padding: 4rem 0;
+}
+.banner span {
+    color: var(--bg);
+}
+/* Banner Section End */
+
+
 /* About section */
+.about {
+    position: relative;
+}
 body .about .content {
     flex: 1 1 45rem;
     padding: 2rem;
@@ -279,46 +308,50 @@ body .about .content h3 {
     color: #fff;
 }
 body .about .content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #ccc;
     padding: 1rem 0;
     line-height: 1.8;
 }
+
 /* Sports section */
-body .menu .box-container {
+.menu .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 1.5rem;
 }
-body .menu .box-container .box {
+.menu .box-container .box {
     padding: 5rem;
     text-align: center;
     border: var(--border);
 }
-body .menu .box-container .box img {
+.menu .box-container .box img {
     height: 10rem;
+    cursor: pointer;
 }
-body .menu .box-container .box h3 {
+.menu .box-container .box h3 {
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
 }
-body .menu .box-container .box .price {
+.menu .box-container .box .price {
     color: #fff;
     font-size: 2.5rem;
     padding: 5rem 0;
 }
-body .menu .box-container .box .price span {
+.menu .box-container .box .price span {
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
-body .menu .box-container .box:hover {
+.menu .box-container .box:hover {
     background: #fff;
+    
 }
-body .menu .box-container .box:hover > * {
+.menu .box-container .box:hover > * {
     color: var(--black);
 }
+
 /* Wholesale section */
 body .products .box-container {
     display: grid;
@@ -329,8 +362,6 @@ body .products .box-container .box {
     padding: 2rem;
     text-align: center;
     border: var(--border);
-    /* height: 25rem; */
-    /* For overlay */
     position: relative;
     overflow: hidden;
 }
@@ -366,27 +397,17 @@ body .products .box-container .box .content .stars {
     color: var(--main-color);
 }
 
-
-
-
-/* For overlay */
-/* body .products .box-container .box.blur .image {
-    filter: blur(4px);
-} */
-/* For overlay */
-/* body .products .box-container .overlay {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.95);
-    z-index: 10;
+.wholesaleDetail .detailCont {
     display: none;
-    padding: 1rem;
-    text-align: center;
-    box-sizing: border-box;
-} */
-/* For overlay */
-/* body .products .box-container .box.show-options .overlay {
-    display: block;
-} */
+    margin-top: 10px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 4px;
+}
+.wholesaleDetail .detailCont button {
+    margin-right: 5px;
+    cursor: pointer;
+}
 
 
 
@@ -428,23 +449,7 @@ body .review .box-container .box .stars i {
 }
 
 /* Contact section */
-body .contact .row {
-    display: flex;
-    background: var(--main-color);
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-body .contact .row .map {
-    flex: 1 1 45rem;
-    width: 100%;
-    object-fit: cover;
-}
-body .contact .row form {
-    flex: 1 1 45rem;
-    padding: 5rem 2rem;
-    text-align: center;
-}
-body .contact .row form .input-box {
+.contact .row form .input-box {
     display: flex;
     align-items: center;
     margin-top: 2rem;
@@ -516,6 +521,7 @@ body .blogs .box-container .box .content p {
 .footer {
     background: var(--black);
     text-align: center;
+    position: relative;
 }
 .footer .share {
     padding: 1rem 0;
@@ -533,33 +539,103 @@ body .blogs .box-container .box .content p {
 .footer .share a:hover {
     background-color: var(--main-color);
 }
-.footer .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    gap: 1rem;
+.footer .makeEnquiry {
+    color: var(--white);
+    border: solid 2px var(--bg);
+    padding: 13px;
+    cursor: pointer;
 }
-.footer .links a {
-    padding: .7rem 2rem;
-    color: #fff;
+.footer .makeEnquiry:hover {
+    background-color: var(--main-color);
+}
+
+/* ABOUT.HTML */
+.aboutHome {
+    color: var(--white);
+    text-align: center;
     border: var(--border);
-    font-size: 2rem;
+    background-image: url(/images/Printing-screen.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1);
 }
-.footer .links a:hover {
-    background: var(--main-color);
+.imageText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 80px;
 }
-.footer .credit {
-    font-size: 2rem;
-    color: #fff;
+.imageText img {
+    width: 40%;
+    height: auto;
+    display: block;
+    border-radius: 10%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* SHOP.HTML */
+.shopHome {
+    color: var(--white);
+    text-align: center;
+    border: var(--border);
+    background-image: url(/images/Tees.jpg);
+    background-size: cover;
+    background-position: top;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1);
+}
+
+/* PRODUCT.HTML */
+.productSlider {
+    margin-top: 20px;
+    color: var(--white);
+}
+.productSlider .box {
+    display: flex;
+}
+.productSlider .box .boxColumn {
+    width: 40%;
+    margin-right: 50px;
+}
+.productSlider .box .boxColumn .imgGroup {
+    display: flex;
+    justify-content: space-between;
+}
+.productSlider .box .imgGroup .smallImgCol {
+    flex-basis: 32.5%;
+    cursor: pointer;
+}
+.productSlider .box .boxDetails {
+    width: 50%;
+}
+.productSlider .box .boxDetails h3 {
+    padding: 40px 0 20px 0;
+}
+.productSlider .box .boxDetails .price {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.productSlider .box .boxDetails .price span {
+    text-decoration: line-through;
     font-weight: lighter;
-    padding: 1.5rem;
 }
-.footer .credit span {
-    color: var(--bg);
+.productSlider .box .boxDetails select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
 }
-
-
+.productSlider .box .boxDetails input {
+    width: 50px;
+    height: 32px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.productSlider .box .boxDetails span {
+    line-height: 21px;
+    font-size: 12px;
+}
 
 
 /* media quaries */
@@ -568,21 +644,25 @@ body .blogs .box-container .box .content p {
         font-size: 55%;
     }
 
-    .header {
+    header {
         padding: 1.5rem 2rem;
     }
 
     section {
         padding: 2rem ;
     }
+    
 }
 
 @media (max-width:768px) {
-    #menu-btn {
+    .imageText img {
+        display: none;
+    }
+    .icons #menu-btn {
         display: inline-block;
     }
 
-    .header .navbar {
+    header .navbar {
         position: absolute;
         top: 100%; right: -100%;
         background: #fff;
@@ -590,11 +670,11 @@ body .blogs .box-container .box .content p {
         height: calc(100vh - 9.5rem);
     }
 
-    .header .navbar.active {
+    header .navbar.active {
         right: 0;
     }
 
-    .header .navbar a {
+    header .navbar a {
         color: var(--black);
         display: block;
         margin: 1.5rem;
@@ -602,7 +682,7 @@ body .blogs .box-container .box .content p {
         font-size: 2rem;
     }
 
-    .header .search-form {
+    header .search-form {
         width: 90%;
         right: 2rem;
     }
@@ -610,7 +690,7 @@ body .blogs .box-container .box .content p {
     .home {
         background-position: left;
         justify-content: center;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .home .content h3 {
@@ -620,10 +700,28 @@ body .blogs .box-container .box .content p {
     .home .content p {
         font-size: 2rem;
     }
+
+    .wrapper .section .content .imageText p {
+        font-size: 20px;
+    }
+
+    .imageText {
+        flex-direction: column;
+        text-align: center;
+    }
+    .imageText img {
+        width: 100%;
+    }
 }
 
 @media (max-width:450px) {
     html {
         font-size: 50%;
+    }
+
+
+
+    .wrapper .section .content .imageText p {
+        padding: 10px;
     }
 }

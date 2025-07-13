@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--character encoding-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive design-->
+
+        <title>SUTRA</title>
+        <link rel="icon" href="/favicon.ico" type="image/png">
+        
+        <!-- Import fontawesome icons  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--Import google fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+        <!-- Custom css file link  -->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        
+    </head>
+    
+    <body>
+        <div class="wrapper">
+
+            <div class="main-bg"></div>
+            
+            <header class="header">
+                <a href="/" class="logo">
+                    <img src="images/Sutra.png" alt=""> <!--LOGO HERE-->
+                </a>
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <a href="#about">ABOUT</a>
+                    <a href="/shop">SHOP</a>
+                    <!-- <a href="#products">WHOLESALE</a> -->
+                    <a href="#blogs">BLOGS</a>
+                    <a href="#review">REVIEW</a>
+                    <a href="/about">CONTACT</a>
+                </nav>
+                <!-- NavIcon btn-->
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                    <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+                    <!-- Responding viewport -->
+                    <i class="fa-solid fa-bars" id="menu-btn"></i>
+                </div>
+                <!-- Searchbar -->
+                <div class="search-form">
+                    <input type="text" id="searchBar" placeholder="search here...">
+                    <label for="searchBar" class="fa-solid fa-magnifying-glass"></label>
+                </div>
+                <!-- CartItem -->
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        <div>Item</div>
+                        <div>Price</div>
+                        <div>Quantity</div>
+                        <div>Total</div>
+                        <div>Action</div>
+                    </div>
+                    <div class="cart-item-container"></div>
+
+                    <div class="cart-total">
+                        <!-- Add subtotal elements -->
+                        <div class="subtotal">Subtotal: Rs.0</div>
+                        <div class="sales-tax">Sales Tax (13%): Rs.0</div>
+                        <div class="coupon">
+                            <labes>Coupon Code: </label>
+                            <input type="text" id="coupon-code" placeholder="Enter code">
+                            <button id="apply-coupon">Apply</button>
+                        </div>
+                        <h3 class="final-total">Total with tax: Rs.0</h3>
+                    </div>
+                    <a href="#" class="cBtn">checkout now</a>
+                </div>
+            </header>
+
+            <div class="blur">
+                
+
+                <!-- Home section starts  -->
+                <section class="aboutHome">
+                    <h4>Since 2016</h4>
+                    <h2>#ABOUT US</h2>
+                </section>
+                <!-- Home section ends  -->
+
+                
+                <!-- About section starts  -->
+                <section class="about" id="about">
+                    <div class="content">
+                        <!-- <h3>What makes our t-shirt special</h3> -->
+                        <div class="imageText">
+                            <p>Founded in 2016, Flames tees is a full service printing and garment making company. We specialize in crafting High-Quality T-shirts, Jacket, Hoodies, etc.. that seamlessly blend style and comfort.</p>
+                            <img src="images/Tees.jpg" alt="Tees" width="100%">
+                        </div>
+                        <div class="imageText">
+                            <img src="images/Garment.jpg" alt="Tees" width="100%">
+                            <p>with over a cumulative of 10+ years experience, we specialize in crafting and printing high-quality t-shirts, hoodies, tracksuits and charity running vest which reflect the latest trends encuring premium quality and variety. Quality relationship with our customers and suppliers are the topmost priority at flames tees. Throughout the years, we have built close relationship with our suppliers resulting in the most variety of options for our customers.</p>
+                        </div>
+                        <div class="imageText">
+                            <p>Our team ensure to uphold the highest standards of quality in every product we create delivering product that exeed expectations and inspire confidence of our customer because our customers rely on us, and we will always rise to meet that trust.</p>
+                            <img src="images/butterfly.jpg" alt="Tees" width="100%">
+                        </div>
+                    </div>
+                </section>
+                <!-- About section ends  -->
+
+                <!-- Review section starts  -->
+                <section class="review" id="review">
+                    <h1 class="heading">customer's <span>review</span></h1>
+                    
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="images/quote.png" alt="" class="quote">
+                            <p>For costum print, remember Flames Tees</p>
+                            <img src="images/krishna08.jpg" alt="" class="user">
+                            <h3>shree krishna</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="images/quote.png" alt="" class="quote">
+                            <p>Best place for printing your own custom tshirt. I loved it. Good quality tshirt. Good quality print.</p>
+                            <img src="images/lord shiva.jpg" alt="" class="user">
+                            <h3>lord shiva</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        
+                </section>
+                <!-- Review section ends  -->
+            
+                <!-- Footer section starts  -->
+                <section class="footer">
+                    
+                    <div class="share">
+                        <a href="https://www.facebook.com/flamestees" class="fab fa-facebook-f"></a>
+                        <a href="https://x.com/FlamesTees" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/flamestees.customprint/" class="fab fa-instagram"></a>
+                        <a href="https://wa.me/9779841941798" class="fab fa-whatsapp"></a>
+                        <a href="https://www.tiktok.com/@flamestees" class="fab fa-tiktok"></a>
+                    </div>
+
+                    <section class="contact" id="contact">
+                        <h1 class="heading"><span>contact</span> us </h1>
+                        
+                        <div class="row">
+                            <form id="contactForm">
+                                <div class="input-box">
+                                    <span class="fas fa-user"></span>
+                                    <input type="text" id="contact" name="contact" placeholder="name" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="fas fa-envelope"></span>
+                                    <input type="email" id="email" name="email" placeholder="email" autocomplete="1" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="fas fa-phone"></span>
+                                    <input type="tel" id="phone" name="phone" placeholder="phone" autocomplete="2" required>
+                                </div>
+                                <input type="submit" value="contact now" class="contactBtn">
+                                <!-- <a href="/api/contact" class="btn" id="aboutUs">Contact Now</a> -->
+                            </form>
+                        </div>
+                    </section>
+
+                    <div class="makeEnquiry">
+                        <h4>Make an enquiry</h4>
+                    </div>
+                    
+                </section>
+                <!-- Footer section ends  -->
+            
+            </div>
+        </div>
+
+            <!-- Custom js file link  -->
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

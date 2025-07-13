@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive design-->
 
         <title>SUTRA</title>
-        <link rel="icon" href="/javascript.ecommerseSite/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/png">
         
         <!-- Import fontawesome icons  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -15,136 +15,321 @@
         <!-- Custom css file link  -->
         <link rel="stylesheet" href="css/stylesheet.css">
         
-        <header class="header">
-
-            <a href="#home" class="logo">
-                <img src="images/Sutra.png" alt=""> <!--LOGO HERE-->
-            </a>
-
-            <!-- Navigation -->
-            <nav class="navbar">
-                <a href="#about">ABOUT</a>
-                <a href="#menu">SPORTS</a>
-                <a href="#products">WHOLESALE</a>
-                <a href="#review">REVIEW</a>
-                <a href="#contact">CONTACT</a>
-                <a href="#blogs">BLOGS</a>
-            </nav>
-            
-            <!-- NavIcon btn-->
-            <div class="icons">
-                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-                <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
-                <!-- Responding viewport -->
-                <i class="fa-solid fa-bars" id="menu-btn"></i>
-            </div>
-            <!-- Searchbar -->
-            <div class="search-form">
-                <input type="text" id="searchBar" placeholder="search here...">
-                <label for="searchBar" class="fa-solid fa-magnifying-glass"></label>
-            </div>
-            
-            <!-- CartItem -->
-            <div class="cart-items-container" id="cart-container">
-                <!-- <a href="#" class="cBtn">checkout now</a> -->
-            </div>
-            
-        </header>
     </head>
     
     <body>
-        <div class="blur">
-                
-            <!-- Home section starts  -->
-            <section class="home" id="home">
-                <div class="content">
-                    <h3>T-shirt for Trekking</h3>
-                    <p>Our high-quality designs are built to last and provide complete comfort during your run. From long-distance and trail running to casual jogs, we have a t-shirt to suit your training and style. Made from lightweight materials, our t-shirts provide a natural fit and allow you to move with ease.</p>
-                    <a href="#menu" class="homeBtn" id="Homebtn">get yours now</a>
-                </div>
-            </section>
-            <!-- Home section ends  -->
+        <div class="wrapper">
 
-            <!-- About section starts  -->
-            <section class="about" id="about">
-                <h1 class="heading"> <span>about</span> us </h1>
+            <div class="main-bg"></div>
+            
+            <header class="header">
+                <a href="#home" class="logo">
+                    <img src="images/Sutra.png" alt=""> <!--LOGO HERE-->
+                </a>
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <a href="#about">ABOUT</a>
+                    <a href="/shop">SHOP</a>
+                    <!-- <a href="#products">WHOLESALE</a> -->
+                    <a href="#blogs">BLOGS</a>
+                    <a href="#review">REVIEW</a>
+                    <a href="/about">CONTACT</a>
+                </nav>
+                <!-- NavIcon btn-->
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                    <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+                    <!-- Responding viewport -->
+                    <i class="fa-solid fa-bars" id="menu-btn"></i>
+                </div>
+                <!-- Searchbar -->
+                <div class="search-form">
+                    <input type="text" id="searchBar" placeholder="search here...">
+                    <label for="searchBar" class="fa-solid fa-magnifying-glass"></label>
+                </div>
+                <!-- CartItem -->
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        <div>Item</div>
+                        <div>Price</div>
+                        <div>Quantity</div>
+                        <div>Total</div>
+                        <div>Action</div>
+                    </div>
+                    <div class="cart-item-container"></div>
+
+                    <div class="cart-total">
+                        <!-- Add subtotal elements -->
+                        <div class="subtotal">Subtotal: Rs.0</div>
+                        <div class="sales-tax">Sales Tax (13%): Rs.0</div>
+                        <div class="coupon">
+                            <labes>Coupon Code: </label>
+                            <input type="text" id="coupon-code" placeholder="Enter code">
+                            <button id="apply-coupon">Apply</button>
+                        </div>
+                        <h3 class="final-total">Total with tax: Rs.0</h3>
+                    </div>
+                    <a href="#" class="cBtn">checkout now</a>
+                </div>
+            </header>
+
+            <div class="blur">
+                
+
+                <!-- Home section starts  -->
+                <section class="home" id="home">
+                    <div class="content">
+                        <h5>Athlete with style and comfort</h5>
+                        <h3>Flames Tees</h3>
+                        <p>Our high-quality designs are built to last and provide complete comfort during your run. From long-distance and trail running to casual jogs, we have a t-shirt to suit your training and style. Made from lightweight materials, our t-shirts provide a natural fit and allow you to move with ease.</p>
+                        <a href="#menu" class="btn">get yours now</a>
+                    </div>
+                </section>
+                <!-- Home section ends  -->
+
+                
+                <!-- About section starts  -->
+                <section class="about" id="about">
+                    <h1 class="heading"> <span>about</span> us </h1>
                     <div class="content">
                         <h3>What makes our t-shirt special</h3>
                         <p>We specialize in crafting high-quality t-shirts, hoodies, and tracksuits that seamlessly blend style and comfort. Our designs reflect the latest trends, ensuring that our customers are always on the cutting edge of fashion. Whether it's the soft touch of our t-shirts, the warmth of our hoodies, or the versatility of our tracksuits, each garment is a testament to our dedication to quality.</p>
                         <p>We take pride in offering state-of-the-art screen printing services. Our skilled team of artisans utilizes the latest technology and techniques to bring your designs to life. Whether you're a small business looking for branded apparel or an individual with a creative vision, our screen printing services are tailored to meet your unique needs.</p>
-                        <a href="#contact" class="btn">Learn more</a>
+                        <a href="/about" class="btn" id="aboutUs">Learn more</a>
                     </div>
-            </section>
-            <!-- About section ends  -->
+                </section>
+                <!-- About section ends  -->
             
             
-            <!-- Sports Wear  -->
-            <section class="menu" id="menu">
-                <h1 class="heading"> SPORTS <span>WEAR</span> </h1>
-                
-                <div class="box-container">
+                <!-- Sports Wear  -->
+                <section class="menu" id="menu">
+                    <h1 class="heading"> FEATURED <span>WEAR</span> </h1>
                     
-                    <div class="box">
-                        <img src="images/Sports jacket_contrast.jpg" alt="">
-                        <h3>ladies sports jacket</h3>
-                        <div class="price">Rs.1450 <span>Rs.1650</span></div>
-                        <a href="#" class="cartBtn">add to cart</a>
+                    <div class="box-container">
+                        
+                        <div class="box">
+                            <a href="product.html?id=001">
+                                <img src="images/Athletics/SportsJacket_Contrast.jpg" alt="">
+                            </a>
+                            <h3>ladies sports jacket</h3>
+                            <div class="price">Rs.1450 <span>Rs.1650</span></div>
+                            <a href="#" class="btn cartBtn">add to cart</a>
+                        </div>
+                        
+                        <div class="box">
+                            <a href="product.html?id=002">
+                                <img src="images/StreetWear/Vest-Shorts-set.jpg" alt="">
+                            </a>
+                            <h3>summer set vest and shorts</h3>
+                            <div class="price">Rs.690 <span>Rs.750</span></div>
+                            <a href="#" class="btn cartBtn">add to cart</a>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="images/Athletics/Bodyhugging-tee.jpg" alt="">
+                            <h3>body hugging ladies sports tees</h3>
+                            <div class="price">Rs.990 <span>Rs.1350</span></div>
+                            <a href="#" class="btn cartBtn">add to cart</a>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="images/Athletics/Sports-bra.jpg" alt="">
+                            <h3>sports bra gymwear</h3>
+                            <div class="price">Rs.990 <span>Rs.1150</span></div>
+                            <a href="#" class="btn cartBtn">add to cart</a>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="images/Athletics/2pset.jpg" alt="">
+                            <h3>ladies 2piece set gymwear</h3>
+                            <div class="price">Rs.2150 <span>Rs.2450</span></div>
+                            <a href="#" class="btn cartBtn">add to cart</a>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="images/Athletics/Shorts.jpg" alt="">
+                            <h3>ladies shorts gymwear</h3>
+                            <div class="price">Rs.1450 <span>Rs.1650</span></div>
+                            <a href="#" class="btn cartBtn">add to cart</a>
+                        </div>
                     </div>
+                </section>
+                <!-- Menu section ends  -->
+            
+                <!-- Product section starts  -->
+                <section class="products" id="products">
+                    <h1 class="heading">Wholesale <span>products</span></h1>
+                    <div class="box-container">
+                        
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="linkBtn">Size</a>
+                                <a href="#"class="linkBtn">Color</a>
+                                <a href="#"class="linkBtn">Quantity</a>
+                            </div>
 
-                    <div class="box">
-                        <img src="images/Vest-Shorts-set.jpg" alt="">
-                        <h3>summer set vest and shorts</h3>
-                        <div class="price">Rs.999 <span>Rs.1450</span></div>
-                        <a href="#" class="cartBtn">add to cart</a>
-                    </div>
-                    
-                    <div class="box">
-                        <img src="images/Bodyhugging-tee.jpg" alt="">
-                        <h3>body hugging ladies sports tees</h3>
-                        <div class="price">Rs.999 <span>Rs.1350</span></div>
-                        <a href="#" class="cartBtn">add to cart</a>
-                    </div>
-                    
-                    <div class="box">
-                        <img src="images/Sports-bra.jpg" alt="">
-                        <h3>sports bra gymwear</h3>
-                        <div class="price">Rs.999 <span>Rs.1150</span></div>
-                        <a href="#" class="cartBtn">add to cart</a>
-                    </div>
-        
-                    <div class="box">
-                        <img src="images/2pset.jpg" alt="">
-                        <h3>ladies 2piece set gymwear</h3>
-                        <div class="price">Rs.2150 <span>Rs.2450</span></div>
-                        <a href="#" class="cartBtn">add to cart</a>
-                    </div>
-                
-                    <div class="box">
-                        <img src="images/Shorts.jpg" alt="">
-                        <h3>ladies shorts gymwear</h3>
-                        <div class="price">Rs.1450 <span>Rs.1650</span></div>
-                        <a href="#" class="cartBtn">add to cart</a>
-                    </div>
-                </div>
-            </section>
-            <!-- Menu section ends  -->
-        
-            <!-- Product section starts  -->
-            <section class="products" id="products">
-                <h1 class="heading">Wholesale <span>products</span></h1>
-                <div class="box-container">
-                    
-                    <div class="box">
-                        <div class="icons">
-                            <a href="#" class="linkBtn">Size</a>
-                            <a href="#"class="linkBtn">Color</a>
-                            <a href="#"class="linkBtn">Quantity</a>
+                            <div class="wholesaleDetail">
+                                <div class="detailCont" id="sizeDetail">
+                                    <p>Select Size:</p>
+                                    <button>S</button>
+                                    <button>M</button>
+                                    <button>L</button>
+                                    <button>XL</button>
+                                </div>
+                                <div class="detailCont" id="colorDetail">
+                                    <p>Select Color:</p>
+                                    <button>White</button>
+                                    <button>Black</button>
+                                    <button>Red</button>
+                                    <button>Grey</button>
+                                </div>
+                                <div class="detailCont" id="quantityDetail">
+                                    <p>Select Quantity:</p>
+                                    <input type="number" min="1" value="1">
+                                </div>
+                            </div>
+
+                            <div class="image">
+                                <img src="images/StreetWear/Hoodie.png" alt="hoodie">
+                            </div>
+                            <div class="content">
+                                <h3>hoodie</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                
+                                <div class="price">Rs.1450 <span>Rs.1850</span></div>
+                                <a href="#" class="btn cartBtn">add to cart</a>
+                            </div>
                         </div>
-                        <div class="image">
-                            <img src="images/Hoodiee.jpg" alt="hoodie">
+                        
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#">Size</a>
+                                <a href="#">Color</a>
+                                <a href="#">Quantity</a>
+                            </div>
+                            <div class="image">
+                                <img src="images/StreetWear/Polo-brand.png" alt="polo">
+                            </div>
+                            <div class="content">
+                                <h3>formal polo</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="price">Rs.950 <span>Rs.1150</span></div>
+                                <a href="#" class="btn cartBtn">add to cart</a>
+                            </div>
                         </div>
-                        <div class="content">
-                            <h3>hoodie</h3>
+                        
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#">Size</a>
+                                <a href="#">Color</a>
+                                <a href="#">Quantity</a>
+                            </div>
+                            <div class="image">
+                                <img src="images/StreetWear/Baseball tee.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Baseball Tees</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="price">Rs.990 <span>Rs.1050</span></div>
+                                <a href="#" class="btn cartBtn">add to cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#">Size</a>
+                                <a href="#">Color</a>
+                                <a href="#">Quantity</a>
+                            </div>
+                            <div class="image">
+                                <img src="images/StreetWear/Nepal.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Nepal Printed Tees</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="price">Rs.690 <span>Rs.750</span></div>
+                                <a href="#" class="btn cartBtn">add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product section ends  -->
+
+                <!-- Banner Start -->
+                <section class="banner">
+                    <h4>Custom Print</h4>
+                    <h2>Choose <span>Your Own Design</span> We will print for you </h2>
+                    <a href="#" class="btn"> Place Order Here </a>
+                </section>
+                <!-- Banner End -->
+
+                <!-- Blogs section starts  -->
+                <section class="blogs" id="blogs">
+                    <h1 class="heading">Our <span>Work</span></h1>
+                    
+                    <div class="box-container">
+                        
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/Printing-screen.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#" class="title">Custom printing</a>
+                                <span>by admin / 25th dec, 2023</span>
+                                <p>Durable and quality printing</p>
+                                <a href="#" class="btn">read more</a>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/Garment.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#" class="title">Production Services</a>
+                                <span>by admin / 25th dec, 2023</span>
+                                <p>Perfect fit</p>
+                                <a href="#" class="btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Blogs section ends  -->
+
+                <!-- Review section starts  -->
+                <section class="review" id="review">
+                    <h1 class="heading">customer's <span>review</span></h1>
+                    
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="images/quote.png" alt="" class="quote">
+                            <p>For costum print, remember Flames Tees</p>
+                            <img src="images/krishna08.jpg" alt="" class="user">
+                            <h3>shree krishna</h3>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -152,23 +337,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                            
-                            <div class="price">Rs.1450 <span>Rs.1850</span></div>
-                            <a href="#" class="cartBtn">add to cart</a>
                         </div>
-                    </div>
-                    
-                    <div class="box">
-                        <div class="icons">
-                            <a href="#">Size</a>
-                            <a href="#">Color</a>
-                            <a href="#">Quantity</a>
-                        </div>
-                        <div class="image">
-                            <img src="images/Polo_tee.jpg" alt="polo">
-                        </div>
-                        <div class="content">
-                            <h3>formal polo</h3>
+                        
+                        <div class="box">
+                            <img src="images/quote.png" alt="" class="quote">
+                            <p>Best place for printing your own custom tshirt. I loved it. Good quality tshirt. Good quality print.</p>
+                            <img src="images/lord shiva.jpg" alt="" class="user">
+                            <h3>lord shiva</h3>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -176,202 +351,33 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                            <div class="price">Rs.950 <span>Rs.1150</span></div>
-                            <a href="#" class="cartBtn">add to cart</a>
                         </div>
+                        
+                </section>
+                <!-- Review section ends  -->
+
+            
+                <!-- Footer section starts  -->
+                <section class="footer">
+                    
+                    <div class="share">
+                        <a href="https://www.facebook.com/flamestees" class="fab fa-facebook-f"></a>
+                        <a href="https://x.com/FlamesTees" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/flamestees.customprint/" class="fab fa-instagram"></a>
+                        <a href="https://wa.me/9779841941798" class="fab fa-whatsapp"></a>
+                        <a href="https://www.tiktok.com/@flamestees" class="fab fa-tiktok"></a>
+                    </div>
+
+                    <div class="makeEnquiry">
+                        <h4>Make an enquiry</h4>
                     </div>
                     
-                    <div class="box">
-                        <div class="icons">
-                            <a href="#">Size</a>
-                            <a href="#">Color</a>
-                            <a href="#">Quantity</a>
-                        </div>
-                        <div class="image">
-                            <img src="images/Baseball tee.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>fullSleeve tees</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="price">Rs.800 <span>Rs.1000</span></div>
-                            <a href="#" class="cartBtn">add to cart</a>
-                        </div>
-                    </div>
-                    
-                    <div class="box">
-                        <div class="icons">
-                            <a href="#">Size</a>
-                            <a href="#">Color</a>
-                            <a href="#">Quantity</a>
-                        </div>
-                        <div class="image">
-                            <img src="images/Nepal.png" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>nepal printed tees</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="price">Rs.750 <span>Rs.950</span></div>
-                            <a href="#" class="cartBtn">add to cart</a>
-                        </div>
-                    </div>
-                    
-                    <!-- <div class="overlay">
-                        <h4>Select Option</h4>
-                        <p><strong>Size:</strong> S, M, L, XL</p>
-                        <p><strong>Color:</strong> Black, Pink, Purple, Blue</p>
-                        <p><strong>Quantity:</strong> 1 - 10</p>
-                        <div class="closeBtn">Close</div>
-                    </div> -->
-                </div>
-            </section>
-            <!-- Product section ends  -->
-
-        
-            <!-- Review section starts  -->
-            <section class="review" id="review">
-                <h1 class="heading">customer's <span>review</span></h1>
-
-                <div class="box-container">
-                    <div class="box">
-                        <img src="images/quote.png" alt="" class="quote">
-                        <p>For costum print, remember Flames Tees</p>
-                        <img src="images/krishna08.jpg" alt="" class="user">
-                        <h3>shree krishna</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="images/quote.png" alt="" class="quote">
-                        <p>Best place for printing your own custom tshirt. I loved it. Good quality tshirt. Good quality print.</p>
-                        <img src="images/lord shiva.jpg" alt="" class="user">
-                        <h3>lord shiva</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="images/quote.png" alt="" class="quote">
-                        <p>It is awesome .. brand with best quality product.</p>
-                        <img src="images/Krishna09.jpg" alt="" class="user">
-                        <h3>hare krishna</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Review section ends  -->
-
-            <!-- contact section starts  -->
-            <section class="contact" id="contact">
-                <h1 class="heading"><span>contact</span> us </h1>
-
-                <div class="row">
-                    <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.736335441642!2d85.3358044749226!3d27.69454292605712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1999a428e6ed%3A0x99bf5c0b9af2cab!2sFlames%20Tees!5e0!3m2!1sen!2snp!4v1703568740616!5m2!1sen!2snp" allowfullscreen="" loading="lazy"></iframe> -->
-                    <form action="/api" method="post">
-                        <div class="input-box">
-                            <span class="fas fa-user"></span>
-                            <input type="text" id="contact" name="contact" placeholder="name">
-                        </div>
-                        <div class="input-box">
-                            <span class="fas fa-envelope"></span>
-                            <input type="text" id="email" name="email" placeholder="email" autocomplete="1">
-                        </div>
-                        <div class="input-box">
-                            <span class="fas fa-phone"></span>
-                            <input type="number" id="phone" name="phone" placeholder="phone" autocomplete="2">
-                        </div>
-                        <input type="submit" value="contact now" class="contactBtn">
-                    </form>
-                </div>
-            </section>
-            <!-- contact section ends  -->
-
-            <!-- Blogs section starts  -->
-            <section class="blogs" id="blogs">
-                <h1 class="heading">Our <span>blogs</span></h1>
-
-                <div class="box-container">
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/Garment.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <a href="#" class="title">Starting from fabrication</a>
-                            <span>by admin / 25th dec, 2023</span>
-                            <p>For a better expecience in production.</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/Printing-screen.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <a href="#" class="title">A process for printing</a>
-                            <span>by admin / 25th dec, 2023</span>
-                            <p>Durable and quality printing</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/cutting-fabric.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <a href="#" class="title">A process for manufacturing</a>
-                            <span>by admin / 25th dec, 2023</span>
-                            <p>Perfect fit</p>
-                            <a href="#" class="btn">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Blogs section ends  -->
-
-            <!-- Footer section starts  -->
-            <section class="footer">
-                <div class="share">
-                    <a href="https://www.facebook.com/flamestees" class="fab fa-facebook-f"></a>
-                    <a href="https://x.com/FlamesTees" class="fab fa-twitter"></a>
-                    <a href="https://www.instagram.com/flamestees.customprint/" class="fab fa-instagram"></a>
-                    <a href="https://wa.me/9779841941798" class="fab fa-whatsapp"></a>
-                    <a href="https://www.tiktok.com/@flamestees" class="fab fa-tiktok"></a>
-                </div>
-            </section>
-            <!-- Footer section ends  -->
-
+                </section>
+                <!-- Footer section ends  -->
+            
+            </div>
         </div>
         <!-- Custom js file link  -->
-        <script src="js/main.js"></script>
+        <script src="js/main.js" defer></script>
     </body>
-</html>
+    </html>

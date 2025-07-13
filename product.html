@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--character encoding-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive design-->
+
+        <title>SUTRA</title>
+        <link rel="icon" href="/favicon.ico" type="image/png">
+        
+        <!-- Import fontawesome icons  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--Import google fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+        <!-- Custom css file link  -->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        
+    </head>
+    
+    <body>
+        <div class="wrapper">
+
+            <div class="main-bg"></div>
+            
+            <header class="header">
+                <a href="/" class="logo">
+                    <img src="images/Sutra.png" alt=""> <!--LOGO HERE-->
+                </a>
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <a href="/about">ABOUT</a>
+                    <a href="/shop">SHOP</a>
+                    <!-- <a href="#products">WHOLESALE</a> -->
+                    <a href="#blogs">BLOGS</a>
+                    <a href="#review">REVIEW</a>
+                    <a href="#contact">CONTACT</a>
+                </nav>
+                <!-- NavIcon btn-->
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                    <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+                    <!-- Responding viewport -->
+                    <i class="fa-solid fa-bars" id="menu-btn"></i>
+                </div>
+                <!-- Searchbar -->
+                <div class="search-form">
+                    <input type="text" id="searchBar" placeholder="search here...">
+                    <label for="searchBar" class="fa-solid fa-magnifying-glass"></label>
+                </div>
+                <!-- CartItem -->
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        <div>Item</div>
+                        <div>Price</div>
+                        <div>Quantity</div>
+                        <div>Total</div>
+                        <div>Action</div>
+                    </div>
+                    <div class="cart-item-container"></div>
+
+                    <div class="cart-total">
+                        <!-- Add subtotal elements -->
+                        <div class="subtotal">Subtotal: Rs.0</div>
+                        <div class="sales-tax">Sales Tax (13%): Rs.0</div>
+                        <div class="coupon">
+                            <labes>Coupon Code: </label>
+                            <input type="text" id="coupon-code" placeholder="Enter code">
+                            <button id="apply-coupon">Apply</button>
+                        </div>
+                        <h3 class="final-total">Total with tax: Rs.0</h3>
+                    </div>
+                    <a href="#" class="cBtn">checkout now</a>
+                </div>
+            </header>
+
+            <div class="blur">
+
+                <section class="productSlider" id="productSlider">
+                    <div class="box">
+                        <div class="boxColumn">
+                            
+                            <img src="images/Athletics/SportsJacket_Contrast.jpg" width="100%" alt="" id="mainImg">
+
+                            <div class="imgGroup">
+                                <div class="smallImgCol">
+                                    <img src="images/Athletics/SportsJacket_Contrast.jpg" width="100%" class="smallImg" id="smallImg1" alt="">
+                                </div>
+                                <div class="smallImgCol">
+                                    <img src="images/Athletics/SportsJacket_Black.jpg" width="100%" class="smallImg" id="smallImg2" alt="">
+                                </div>
+                                <div class="smallImgCol">
+                                    <img src="images/Athletics/SportsJacket_Pink.jpg" width="100%" class="smallImg" id="smallImg3" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="boxDetails">
+                            <h3 id="productName">Ladies Sports Jacket</h3>
+                            <div class="price" id="price">Rs.1450 <span>Rs.1650</span></div>
+                            <select>
+                                <option>Select Size</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>XL</option>
+                            </select>
+                            <input type="number" value="1">
+                            <a href="#" class="btn cartBtn">add to cart</a>
+                            <h3>Product Details</h3>
+                            <span id="productDetail">Women's contrast full zip Sport Jacket💫 Nylon Spandex fabric: Moisture-wicking, High stretchable🤸‍♂️ Soft brushed jacket that's flexible and features contrast colour🎶 #gym #gymwear #fashion #yoga #zumba #fitness #sportswear #trekking</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Footer section starts  -->
+                <section class="footer">
+                    
+                    <div class="share">
+                        <a href="https://www.facebook.com/flamestees" class="fab fa-facebook-f"></a>
+                        <a href="https://x.com/FlamesTees" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/flamestees.customprint/" class="fab fa-instagram"></a>
+                        <a href="https://wa.me/9779841941798" class="fab fa-whatsapp"></a>
+                        <a href="https://www.tiktok.com/@flamestees" class="fab fa-tiktok"></a>
+                    </div>
+
+                    <div class="makeEnquiry">
+                        <h4>Make an enquiry</h4>
+                    </div>
+                    
+                </section>
+                <!-- Footer section ends  -->
+            
+            </div>
+        </div>
+        <!-- Custom js file link  -->
+         
+        <script src="js/main.js" defer></script>
+    </body>
+    </html>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "001",
+        "name": "Ladies Sports Jacket",
+        "description": "Women's contrast full zip Sport Jacket💫 Nylon Spandex fabric: Moisture-wicking, High stretchable🤸‍♂️ Soft brushed jacket that's flexible and features contrast colour🎶 #gym #gymwear #fashion #yoga #zumba #fitness #sportswear #trekking",
+        "price": "Rs.1450",
+        "image": "images/Athletics/SportsJacket_Contrast.jpg",
+        "image1": "images/Athletics/SportsJacket_Contrast.jpg",
+        "image2": "images/Athletics/SportsJacket_Black.jpg",
+        "image3": "images/Athletics/SportsJacket_Pink.jpg"
+    },
+    {
+        "id": "002",
+        "name": "Summer set vest and shorts",
+        "description": "Gym vest and shorts set🥰 For this summer workout with this beautiful set😍 Exclusively on flames tees❤️‍🔥 #gym #flamestees #sportswear #clothingbrand #printing #tshirtprinting #gymvest #Nepal #follow",
+        "price": "Rs.999",
+        "image": "images/StreetWear/Vest-Shorts-set.jpg",
+        "image1": "images/StreetWear/Vest-Shorts-set.jpg",
+        "image2": "images/StreetWear/Vest-Shorts-set_grey.jpg",
+        "image3": "images/StreetWear/Vest-Shorts-set_grey.jpg"
+    }
+]
