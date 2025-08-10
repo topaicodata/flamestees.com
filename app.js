@@ -30,6 +30,12 @@ app.get('/shop', (req, res) => {
 app.get('/product.json', (req, res) => {
     res.sendFile(path.join(__dirname, 'product.json'));
 });
+app.get('/customPrinting', (req, res) => {
+    res.sendFile(path.join(__dirname, 'printing.html'));
+});
+app.get('/production', (req, res) => {
+    res.sendFile(path.join(__dirname, 'production.html'));
+});
 
 
 //CONTACT US

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--character encoding-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive design-->
+
+        <title>SUTRA</title>
+        <link rel="icon" href="/favicon.ico" type="image/png">
+        
+        <!-- Import fontawesome icons  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--Import google fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+        <!-- Custom css file link  -->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        
+    </head>
+    
+    <body>
+        <div class="wrapper">
+
+            <div class="main-bg"></div>
+            
+            <header class="header">
+                <a href="/" class="logo">
+                    <img src="images/Sutra.png" alt=""> <!--LOGO HERE-->
+                </a>
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <a href="#about">ABOUT</a>
+                    <a href="/shop.html">SHOP</a>
+                    <!-- <a href="#products">WHOLESALE</a> -->
+                    <a href="#blogs">BLOGS</a>
+                    <a href="#review">REVIEW</a>
+                    <a href="/about.html">CONTACT</a>
+                </nav>
+                <!-- NavIcon btn-->
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                    <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+                    <!-- Responding viewport -->
+                    <i class="fa-solid fa-bars" id="menu-btn"></i>
+                </div>
+                <!-- Searchbar -->
+                <div class="search-form">
+                    <input type="text" id="searchBar" placeholder="search here...">
+                    <label for="searchBar" class="fa-solid fa-magnifying-glass"></label>
+                </div>
+                <!-- CartItem -->
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        <div>Item</div>
+                        <div>Price</div>
+                        <div>Quantity</div>
+                        <div>Total</div>
+                        <div>Action</div>
+                    </div>
+                    <div class="cart-item-container"></div>
+
+                    <div class="cart-total">
+                        <!-- Add subtotal elements -->
+                        <div class="subtotal">Subtotal: Rs.0</div>
+                        <div class="sales-tax">Sales Tax (13%): Rs.0</div>
+                        <div class="coupon">
+                            <labes>Coupon Code: </label>
+                            <input type="text" id="coupon-code" placeholder="Enter code">
+                            <button id="apply-coupon">Apply</button>
+                        </div>
+                        <h3 class="final-total">Total with tax: Rs.0</h3>
+                    </div>
+                    <a href="#" class="cBtn">checkout now</a>
+                </div>
+            </header>
+
+            <div class="blur">
+                
+
+                <!-- Home section starts  -->
+                <section class="garmentHome">
+                        <h4>#We produce apparel with design varieties</h5>
+                        <h3>Garment Product</h3>
+                </section>
+                <!-- Home section ends  -->
+
+                <section class="aboutProduct">
+                    <p>From fabric to the style you choose to wear <br>
+                        <span>We make your style come to life. From minimum quantity to large quantity, our production house can help you build your business. Weather you are "social influncer designing your merch", "corporate designing your dress code", "bussiness owner working for advertisement" our service will ease you in one stop with all production and printing process.</span>
+                    </p>
+                    <img src="images/garmentMachine.jpg" alt="garment" width="100%">
+                </section>
+
+                <!-- Blogs section starts  -->
+                <section class="blogs" id="blogs">
+                    <h1 class="heading">Our <span>Work</span></h1>
+                    
+                    <div class="box-container">
+                        
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/Printing-screen.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#" class="title">Custom printing</a>
+                                <span>by admin / 25th dec, 2023</span>
+                                <p>Durable and quality printing</p>
+                                <a href="/customPrinting" class="btn">read more</a>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/Garment.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#" class="title">Production Services</a>
+                                <span>by admin / 25th dec, 2023</span>
+                                <p>Perfect fit</p>
+                                <a href="/production" class="btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Blogs section ends  -->
+
+                <!-- Footer section starts  -->
+                <section class="footer">
+                    
+                    <div class="share">
+                        <a href="https://www.facebook.com/flamestees" class="fab fa-facebook-f"></a>
+                        <a href="https://x.com/FlamesTees" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/flamestees.customprint/" class="fab fa-instagram"></a>
+                        <a href="https://wa.me/9779841941798" class="fab fa-whatsapp"></a>
+                        <a href="https://www.tiktok.com/@flamestees" class="fab fa-tiktok"></a>
+                    </div>
+
+                    <div class="makeEnquiry">
+                        <h4>Make an enquiry</h4>
+                    </div>
+                    
+                </section>
+                <!-- Footer section ends  -->
+            
+            </div>
+        </div>
+        <!-- Custom js file link  -->
+        <script src="js/main.js" defer></script>
+    </body>
+    </html>

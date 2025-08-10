@@ -276,23 +276,6 @@ body .heading span {
     text-transform: uppercase;
 }
 
-/* Banner Section Start */
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--white);
-    border: var(--border);
-    background-color: rgba(0, 0, 0, .3);
-    margin: 4rem 0;
-    padding: 4rem 0;
-}
-.banner span {
-    color: var(--bg);
-}
-/* Banner Section End */
 
 
 /* About section */
@@ -637,6 +620,71 @@ body .blogs .box-container .box .content p {
     font-size: 12px;
 }
 
+/* PRINTING.HTML */
+.printingHome {
+    color: var(--white);
+    text-align: center;
+    border: var(--border);
+    background-image: url(/images/screenPrint.png);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1);
+}
+.aboutPrint {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+.aboutPrint p {
+    /* position: absolute; */
+    bottom: 10rem;
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1);
+}
+.aboutPrint img {
+    display: block;
+    border-radius: 10%;
+    width: 40rem;
+}
+
+/* PRODUCTION.HTML */
+.garmentHome {
+    color: var(--white);
+    text-align: center;
+    border: var(--border);
+    background-image: url(/images/garmentProduct.jpg);
+    background-size: cover;
+    background-position: top;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1);
+}
+.aboutProduct {
+    /* position: relative; */
+    display: flex;
+    gap: 20px;
+}
+.aboutProduct p {
+    /* display: grid; */
+    /* position: absolute; */
+    /* bottom: 10rem; */
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1);
+}
+.aboutProduct p span {
+    font-size: 2rem;
+    font-weight: normal;
+}
+.aboutProduct img {
+    /* display: block; */
+    border-radius: 10%;
+    width: 80rem;
+}
+
 
 /* media quaries */
 @media (max-width:991px) {
@@ -650,6 +698,12 @@ body .blogs .box-container .box .content p {
 
     section {
         padding: 2rem ;
+    }
+    .aboutProduct p, .aboutPrint p {
+        font-size: 3.5rem;
+    }
+    .aboutProduct img, .aboutPrint img {
+    width: 40rem;
     }
     
 }
@@ -712,11 +766,23 @@ body .blogs .box-container .box .content p {
     .imageText img {
         width: 100%;
     }
+    .aboutProduct p, .aboutPrint p {
+        font-size: 3rem;
+    }
+    .aboutProduct img, .aboutPrint img {
+        width: 30rem;
+    }
 }
 
 @media (max-width:450px) {
     html {
         font-size: 50%;
+    }
+    .aboutProduct p, .aboutPrint p {
+        font-size: 2rem;
+    }
+    .aboutProduct img, .aboutPrint img {
+        width: 20rem;
     }
 
 
