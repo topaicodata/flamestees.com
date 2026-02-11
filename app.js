@@ -89,27 +89,6 @@ app.post('/api/contact', (req, res) => {
     });
 });
 
-
-
-async function uploadFile() {
-const client = new ftp.Client();
-client.ftp.verbose = true; //Enable logs
-
-try {
-        await client.access({
-                host: "premium79.web-hosting.com", //FTP server address
-                user: "bee@flamestees.com", //FTP username
-                password: "r2K}O;iRc=%0", //FTP password
-                secure: true, //true if server supports FTPS
-            });
-            console.log("Connected to FTP server");
-        } catch (error) {
-                console.log("FTP upload error", error);
-            }
-        uploadFile();
-        }        
-
-
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

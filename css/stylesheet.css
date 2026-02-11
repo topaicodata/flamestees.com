@@ -1,8 +1,8 @@
 :root {
-    --main-color: #581845 ;
+    --main-color: #00ADEF ;
     --black: #13131a;
     --white: #fff;
-    --bg: #d3ad7f;
+    --bg: #FDD700;
     --border: .1rem solid rgba(255, 255, 255, .3);
 }
 /* Base styling */
@@ -54,6 +54,7 @@ html::-webkit-scrollbar-thumb:hover {
 /* BODY SECTION  */
 body {
     scroll-behavior: smooth;
+    background: linear-gradient(135deg, #3e054d 0%, #64087b 50%, #c011ec 100%);
     /* min-height: 100vh; */
     /* position: relative; */
 }
@@ -96,8 +97,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background: var(--bg);
-    border-bottom: var(--border);
+    /* background: var(--bg); */
+    /* border-bottom: var(--border); */
     position: sticky;
     top: 0;
     left: 0;
@@ -127,6 +128,41 @@ header .icons i {
 header .icons i:hover {
     color: var(--main-color);
 }
+
+/* HOME SECTION START */
+body .home {
+    /* background: url(../images/joggingflip.jpg) no-repeat; */
+    min-height: 100vh;
+    transition: all 0.5s ease;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+body .home .content {
+    max-width: 70rem;
+    z-index: 888;
+    color: #fff;
+    display: block;
+}
+body .home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+body .home .content h5 {
+    font-size: 2.5rem;
+}
+body .home .content p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+/* HOME SECTION END */
 .icons #menu-btn {
     display: none;
 }
@@ -230,38 +266,6 @@ header .cart-items-container.active {
 /* CART ITEMS END */
 /* HEADER SECTION ENDS */
 
-/* HOME SECTION START */
-body .home {
-    min-height: 100vh;
-    transition: all 0.5s ease;
-    position: relative;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-body .home .content {
-    max-width: 70rem;
-    z-index: 888;
-    color: #fff;
-    display: block;
-}
-body .home .content h3 {
-    font-size: 6rem;
-    text-transform: uppercase;
-    color: #fff;
-}
-body .home .content h5 {
-    font-size: 2.5rem;
-}
-body .home .content p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color: #eee;
-}
-/* HOME SECTION END */
 
 
 body .heading {
