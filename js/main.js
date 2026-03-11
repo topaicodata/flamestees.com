@@ -1,24 +1,21 @@
-// Show/hide the Navbar for responsive design
+let searchForm = document.querySelector(".search-form");
+let cartItem = document.querySelector(".cart-items-container");
 let navbar = document.querySelector(".navbar");
-if (navbar) {
+if (navbar) { // Show/hide the Navbar
   document.querySelector("#menu-btn").onclick = () => {
     navbar.classList.toggle("active");
     cartItem.classList.remove("active");
     searchForm.classList.remove("active");
   };
 }
-// Show/hide the CartItem
-let cartItem = document.querySelector(".cart-items-container");
-if (cartItem) {
+if (cartItem) { // Show/hide the CartItem
   document.querySelector("#cart-btn").onclick = () => {
     cartItem.classList.toggle("active");
     navbar.classList.remove("active");
     searchForm.classList.remove("active");
   };
 }
-// Show/hide the SearchForm
-let searchForm = document.querySelector(".search-form");
-if (searchForm) {
+if (searchForm) { // Show/hide the SearchForm
   document.querySelector("#search-btn").onclick = () => {
     searchForm.classList.toggle("active");
     navbar.classList.remove("active");
