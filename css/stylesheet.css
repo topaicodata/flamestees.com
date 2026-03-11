@@ -38,6 +38,7 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
     background: #fff;
 }
+
 .btn, .contactBtn, .cBtn {
     margin-top: 1rem;
     display: inline-block;
@@ -54,20 +55,23 @@ html::-webkit-scrollbar-thumb:hover {
 /* BODY SECTION  */
 body {
     scroll-behavior: smooth;
-    background: linear-gradient(135deg, #3e054d 0%, #64087b 50%, #c011ec 100%);
+    /* background: linear-gradient(135deg, #3e054d 0%, #64087b 50%, #c011ec 100%); */
     /* min-height: 100vh; */
     /* position: relative; */
 }
 .wrapper {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
+
 .main-bg {
-    background: url(../images/joggingflip.jpg) no-repeat;
+    min-height: 100vh;
+    position: absolute;
+    background: url(../images/joggingflip.webp) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    background-attachment: fixed;
     /* opacity: 0.8; */
-    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -746,7 +750,7 @@ body .blogs .box-container .box .content p {
     }
 
     .home {
-        background-position: left;
+        background-position: right;
         justify-content: center;
         /* text-align: center; */
     }
