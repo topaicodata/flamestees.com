@@ -545,7 +545,7 @@ body .blogs .box-container .box .content p {
     color: var(--white);
     text-align: center;
     border: var(--border);
-    background-image: url(/images/Printing-screen.jpg);
+    background-image: url(/images/Printing-screen.webp);
     background-size: cover;
     background-position: center;
     text-shadow: 2px 2px 8px rgba(0,0,0,1);
@@ -663,7 +663,7 @@ body .blogs .box-container .box .content p {
     color: var(--white);
     text-align: center;
     border: var(--border);
-    background-image: url(/images/garmentProduct.jpg);
+    background-image: url(/images/garmentProduct.webp);
     background-size: cover;
     background-position: top;
     text-shadow: 2px 2px 8px rgba(0,0,0,1);
