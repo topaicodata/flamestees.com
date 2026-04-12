@@ -18,58 +18,59 @@
     </head>
     
     <body>
-        <div class="wrapper">
-                <div class="main-bg"></div>
-            
-            <header class="header">
-                <a href="#home" class="logo">
-                    <img src="images/logo.webp" alt=""> <!--LOGO HERE-->
-                </a>
-                <!-- Navigation -->
-                <nav class="navbar">
-                    <a href="/about">ABOUT</a>
-                    <a href="/shop">SHOP</a>
-                    <a href="/customPrinting">BLOGS</a>
-                    <a href="#review">REVIEW</a>
-                    <a href="/about">CONTACT</a>
-                </nav>
-                <!-- NavIcon btn-->
-                <div class="icons">
-                    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-                    <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
-                    <!-- Responding viewport -->
-                    <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <header class="header">
+            <a href="#home" class="logo">
+                <img src="images/logo-orange.webp" alt=""> <!--LOGO HERE-->
+            </a>
+            <!-- Navigation -->
+            <nav class="navbar">
+                <a href="/about">ABOUT</a>
+                <a href="/shop">SHOP</a>
+                <a href="/customPrinting">BLOGS</a>
+                <a href="#review">REVIEW</a>
+                <a href="/about">CONTACT</a>
+            </nav>
+            <!-- NavIcon btn-->
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+                <!-- Responding viewport -->
+                <i class="fa-solid fa-bars" id="menu-btn"></i>
+            </div>
+            <!-- Searchbar -->
+            <div class="search-form">
+                <input type="text" id="searchBar" placeholder="search here...">
+                <label for="searchBar" class="fa-solid fa-magnifying-glass"></label>
+            </div>
+            <!-- CartItem -->
+            <div class="cart-items-container">
+                <div class="cart-header">
+                    <div>Item</div>
+                    <div>Price</div>
+                    <div>Quantity</div>
+                    <div>Total</div>
+                    <div>Action</div>
                 </div>
-                <!-- Searchbar -->
-                <div class="search-form">
-                    <input type="text" id="searchBar" placeholder="search here...">
-                    <label for="searchBar" class="fa-solid fa-magnifying-glass"></label>
-                </div>
-                <!-- CartItem -->
-                <div class="cart-items-container">
-                    <div class="cart-header">
-                        <div>Item</div>
-                        <div>Price</div>
-                        <div>Quantity</div>
-                        <div>Total</div>
-                        <div>Action</div>
-                    </div>
-                    <div class="cart-item-container"></div>
-                    
-                    <div class="cart-total">
-                        <!-- Add subtotal elements -->
-                        <div class="subtotal">Subtotal: Rs.0</div>
-                        <div class="sales-tax">Sales Tax (13%): Rs.0</div>
-                        <div class="coupon">
-                            <labes>Coupon Code: </label>
-                                <input type="text" id="coupon-code" placeholder="Enter code">
-                                <button id="apply-coupon">Apply</button>
-                            </div>
-                            <h3 class="final-total">Total with tax: Rs.0</h3>
+                <div class="cart-item-container"></div>
+                
+                <div class="cart-total">
+                    <!-- Add subtotal elements -->
+                    <div class="subtotal">Subtotal: Rs.0</div>
+                    <div class="sales-tax">Sales Tax (13%): Rs.0</div>
+                    <div class="coupon">
+                        <labes>Coupon Code: </label>
+                            <input type="text" id="coupon-code" placeholder="Enter code">
+                            <button id="apply-coupon">Apply</button>
                         </div>
-                        <a href="#" class="cBtn">checkout now</a>
-                    </div>
-                </header>
+                        <h3 class="final-total">Total with tax: Rs.0</h3>
+                </div>
+                <a href="#" class="cBtn">Buy now</a>
+            </div>
+        </header>
+        <div class="wrapper">
+            
+            <div class="main-bg"></div>
+            
                 
                 <div class="blur">
                     
@@ -81,13 +82,13 @@
                         <h3>Flames Tees</h3>
                         <p>Our high-quality designs are built to last and provide complete comfort during your trip. From long-distance and trail walk to casual walk, we have a t-shirt to suit your trip. Made from lightweight materials, our t-shirts provide a natural fit and allow you to move with ease.</p>
                         <a href="#menu" class="btn">get yours now</a>
-                    </div>
-                </section>
-                <!-- Home section ends  -->
+                        </div>
+                    </section>
+                    <!-- Home section ends  -->
 
                 
                 <!-- About section starts  -->
-                <section class="about" id="about">
+                <section class="about reveal" id="about">
                     <h1 class="heading"> <span>about</span> us </h1>
                     <div class="content">
                         <h3>What makes our t-shirt special</h3>
@@ -155,7 +156,7 @@
                 <!-- Menu section ends  -->
             
                 <!-- Product section starts  -->
-                <section class="products" id="products">
+                <section class="products reveal" id="products">
                     <h1 class="heading">Wholesale <span>products</span></h1>
                     <div class="box-container">
                         
@@ -278,7 +279,7 @@
                 <!-- Product section ends  -->
 
                 <!-- Blogs section starts  -->
-                <section class="blogs" id="blogs">
+                <section class="blogs reveal" id="blogs">
                     <h1 class="heading">Our <span>Work</span></h1>
                     
                     <div class="box-container">
@@ -311,7 +312,7 @@
                 <!-- Blogs section ends  -->
 
                 <!-- Review section starts  -->
-                <section class="review" id="review">
+                <section class="review reveal" id="review">
                     <h1 class="heading">customer's <span>review</span></h1>
                     
                     <div class="box-container">
@@ -358,9 +359,7 @@
                         <a href="https://www.tiktok.com/@flamestees" class="fab fa-tiktok"></a>
                     </div>
 
-                    <div class="makeEnquiry">
-                        <h4>Make an enquiry</h4>
-                    </div>
+                    <div class="makeEnquiry">Make an enquire</div>
                     
                 </section>
                 <!-- Footer section ends  -->

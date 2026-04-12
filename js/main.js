@@ -1,26 +1,29 @@
-let searchForm = document.querySelector(".search-form");
-let cartItem = document.querySelector(".cart-items-container");
 let navbar = document.querySelector(".navbar");
-if (navbar) { // Show/hide the Navbar
-  document.querySelector("#menu-btn").onclick = () => {
+if (navbar) {
+  // Show/hide the Navbar
+  document.getElementById("menu-btn").onclick = () => {
     navbar.classList.toggle("active");
     cartItem.classList.remove("active");
     searchForm.classList.remove("active");
   };
 }
-if (cartItem) { // Show/hide the CartItem
-  document.querySelector("#cart-btn").onclick = () => {
+let cartItem = document.querySelector(".cart-items-container");
+if (cartItem) {
+  // Show/hide the CartItem
+  document.getElementById("cart-btn").onclick = () => {
     cartItem.classList.toggle("active");
     navbar.classList.remove("active");
     searchForm.classList.remove("active");
   };
 }
-if (searchForm) { // Show/hide the SearchForm
-  document.querySelector("#search-btn").onclick = () => {
+let searchForm = document.querySelector(".search-form");
+if (searchForm) {
+  // Show/hide the SearchForm
+  document.getElementById("search-btn").onclick = () => {
     searchForm.classList.toggle("active");
     navbar.classList.remove("active");
     cartItem.classList.remove("active");
-  };
+  };  
 }
 
 //Live search filter
@@ -65,7 +68,6 @@ if (blurEffect) {
 
 // CART SECTION START
 const cartContainer = document.querySelector(".cart-items-container");
-const cartitemContainer = document.querySelector(".cart-item-container");
 
 const subtotal = document.querySelector(".subtotal");
 const salestax = document.querySelector(".sales-tax");
@@ -97,6 +99,7 @@ function addItemCart(product) {
   updateCartDisplay();
 }
 
+const cartitemContainer = document.querySelector(".cart-item-container");
 //Update cart display
 function updateCartDisplay() {
   cartitemContainer.innerHTML = ""; //Clear items
@@ -198,6 +201,22 @@ function extractPrice(price) {
 }
 // CART SECTION END
 
+const revealElements = document.querySelectorAll(".reveal");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  },
+);
+revealElements.forEach((reveal) => observer.observe(reveal));
 // WHOLESALE SECTION START
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".linkBtn");
